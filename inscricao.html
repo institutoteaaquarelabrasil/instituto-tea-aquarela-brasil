@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscrição - Instituto TEA Aquarela Brasil</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Instituto TEA Aquarela Brasil</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#instituto">Quem Somos</a>
+            <a href="index.html#servicos">Serviços</a>
+            <a href="index.html#projetos">Projetos</a>
+            <a href="index.html#contato">Contato</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="formulario">
+
+            <h2>📝 Inscrição no Instituto</h2>
+
+            <p>
+                Preencha os dados abaixo para solicitar sua inscrição
+                no Instituto TEA Aquarela Brasil.
+            </p>
+
+
+            <form action="https://formspree.io/f/xzebblzq" method="POST">
+
+                <h3>Dados da pessoa atendida</h3>
+
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="Nome" required>
+
+
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" id="nascimento" name="Data de nascimento" required>
+
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="Cidade" required>
+
+
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="Bairro">
+
+
+                <h3>Dados do responsável</h3>
+
+                <label for="responsavel">Nome do responsável</label>
+                <input type="text" id="responsavel" name="Responsável">
+
+
+                <label for="parentesco">Parentesco</label>
+                <input type="text" id="parentesco" name="Parentesco">
+
+
+                <label for="telefone">WhatsApp / Telefone</label>
+                <input type="tel" id="telefone" name="Telefone" required>
+
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="E-mail" required>
+
+
+                <h3>Atendimento desejado</h3>
+
+                <p>Selecione o serviço que deseja solicitar:</p>
+
+
+                <label class="opcao">
+                    <input type="checkbox" name="Serviço" value="Psicologia">
+                    Psicologia
+                </label>
+
+
+                <label class="opcao">
+                    <input type="checkbox" name="Serviço" value="Fonoaudiologia">
+                    Fonoaudiologia
+                </label>
+
+
+                <label class="opcao">
+                    <input type="checkbox" name="Serviço" value="Fisioterapia">
+                    Fisioterapia
+                </label>
+
+
+                <label class="opcao">
+                    <input type="checkbox" name="Serviço" value="Terapia Ocupacional">
+                    Terapia Ocupacional
+                </label>
+
+
+                <label class="opcao">
+                    <input type="checkbox" name="Serviço" value="Nutrição">
+                    Nutrição
+                </label>
+
+
+                <label class="opcao">
+                    <input type="checkbox" name="Serviço" value="Assistência Social">
+                    Assistência Social
+                </label>
+
+
+                <label class="opcao">
+                    <input type="checkbox" name="Serviço" value="Atendimento Médico">
+                    Atendimento Médico
+                </label>
+
+
+                <label class="opcao">
+                    <input type="checkbox" name="Serviço" value="Educação">
+                    Educação / Apoio Pedagógico
+                </label>
+
+
+                <label for="outro">Outro serviço</label>
+                <input type="text" id="outro" name="Outro serviço">
+
+
+                <label for="motivo">
+                    Conte brevemente o motivo da solicitação
+                </label>
+
+                <textarea
+                    id="motivo"
+                    name="Motivo da solicitação"
+                    rows="5">
+                </textarea>
+
+
+                <h3>Contato</h3>
+
+                <label for="preferencia">
+                    Como prefere ser contactado?
+                </label>
+
+                <select id="preferencia" name="Preferência de contato">
+
+                    <option value="">
+                        Selecione
+                    </option>
+
+                    <option value="WhatsApp">
+                        WhatsApp
+                    </option>
+
+                    <option value="Ligação">
+                        Ligação telefônica
+                    </option>
+
+                    <option value="E-mail">
+                        E-mail
+                    </option>
+
+                </select>
+
+
+                <label class="termo">
+
+                    <input
+                        type="checkbox"
+                        name="Autorização"
+                        value="Sim"
+                        required>
+
+                    Declaro que as informações fornecidas são verdadeiras
+                    e autorizo o Instituto a utilizá-las para fins relacionados
+                    à inscrição e contato.
+
+                </label>
+
+
+                <button type="submit">
+                    ENVIAR INSCRIÇÃO
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Instituto TEA Aquarela Brasil
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

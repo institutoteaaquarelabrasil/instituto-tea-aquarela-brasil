@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>INSTITUTO TEA AQUARELA BRASIL - ITAB</title>
+
+<style>
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #173b6b;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background: rgba(255,255,255,0.97);
+    padding: 15px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.10);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.logo-text span:first-child {
+    display: block;
+    color: #1557a6;
+    font-size: 18px;
+}
+
+.logo-text span:last-child {
+    color: #e95b2b;
+    font-size: 15px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+nav a {
+    color: #1557a6;
+    font-weight: bold;
+    padding: 9px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #e9f5ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(circle at top left, #dff5ff, transparent 35%),
+        radial-gradient(circle at bottom right, #fff0c9, transparent 35%),
+        linear-gradient(135deg, #ffffff, #f3fbff);
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero-logo {
+    width: 180px;
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    color: #1557a6;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 27px;
+    color: #e45a20;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 800px;
+    margin: auto;
+    color: #40536b;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botoes {
+    margin-top: 30px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 14px 24px;
+    margin: 7px;
+    border-radius: 30px;
+    background: #1557a6;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 12px rgba(21,87,166,0.20);
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.botao-laranja {
+    background: #e85b22;
+}
+
+.botao-verde {
+    background: #159447;
+}
+
+.botao-roxo {
+    background: #7042a8;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    padding: 80px 20px;
+}
+
+.secao {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo h2 {
+    font-size: 35px;
+    color: #1557a6;
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    max-width: 800px;
+    margin: auto;
+    color: #566579;
+    font-size: 17px;
+}
+
+
+/* =========================
+   QUEM SOMOS
+========================= */
+
+.quem-somos {
+    background: #ffffff;
+}
+
+.quem-texto {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #40536b;
+}
+
+.missao {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.missao-card {
+    padding: 30px;
+    border-radius: 20px;
+    background: #f5faff;
+    border: 1px solid #dcebf7;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.missao-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.missao-card .icone {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.missao-card h3 {
+    color: #1557a6;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.servicos {
+    background: #f6fbff;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+}
+
+.servico {
+    background: white;
+    padding: 25px 18px;
+    border-radius: 18px;
+    border: 1px solid #dbe8f3;
+    text-align: center;
+    min-height: 175px;
+    transition: 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.servico .icone {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.servico h3 {
+    color: #1557a6;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.servico p {
+    color: #596675;
+    font-size: 14px;
+}
+
+
+/* =========================
+   AÇÕES
+========================= */
+
+.acoes {
+    background: white;
+}
+
+.acoes-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 22px;
+}
+
+.acao {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #dce8f2;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.acao:hover {
+    transform: translateY(-5px);
+}
+
+.acao-foto {
+    height: 170px;
+    background: linear-gradient(135deg,#e5f6ff,#fff4d8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.acao-conteudo {
+    padding: 20px;
+    text-align: center;
+}
+
+.acao h3 {
+    color: #1557a6;
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   APOIE
+========================= */
+
+.apoie {
+    background:
+        linear-gradient(135deg,#eff8ff,#fff9e8);
+}
+
+.apoie-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.apoie-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 22px;
+    text-align: center;
+    border: 1px solid #dce7f0;
+}
+
+.apoie-card .icone {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.apoie-card h3 {
+    color: #1557a6;
+    margin-bottom: 12px;
+}
+
+.apoie-card p {
+    color: #596675;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   FAÇA PARTE
+========================= */
+
+.faca-parte {
+    background: #ffffff;
+    text-align: center;
+}
+
+.faca-parte-box {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 25px;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#1557a6,#2384d6);
+    color: white;
+}
+
+.faca-parte-box h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.faca-parte-box p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contato {
+    background: #f7fbff;
+}
+
+.contato-grid {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.contato-card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #dce8f2;
+}
+
+.contato-card .icone {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.contato-card h3 {
+    color: #1557a6;
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #123f78;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 1000px) {
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .servicos-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .acoes-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-logo {
+        width: 140px;
+    }
+
+    .missao {
+        grid-template-columns: 1fr;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .acoes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apoie-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 7px 8px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     CABEÇALHO
+========================= -->
+
+<header>
+
+    <div class="header-container">
+
+        <div class="logo">
+
+            <img src="imagens/logo.png" alt="Logo do Instituto TEA Aquarela Brasil">
+
+            <div class="logo-text">
+
+                <span>
+                    INSTITUTO TEA AQUARELA
+                </span>
+
+                <span>
+                    BRASIL - ITAB
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#inicio">Início</a>
+
+            <a href="#instituto">Quem Somos</a>
+
+            <a href="#servicos">Serviços</a>
+
+            <a href="#acoes">Ações</a>
+
+            <a href="#apoie">Apoie</a>
+
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     INÍCIO
+========================= -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <img
+            src="imagens/logo.png"
+            alt="Instituto TEA Aquarela Brasil - ITAB"
+            class="hero-logo"
+        >
+
+        <h1>
+            INSTITUTO TEA AQUARELA BRASIL - ITAB
+        </h1>
+
+        <h2>
+            Cuidado, inclusão e desenvolvimento em cada etapa da vida!
+        </h2>
+
+        <p>
+            Oferecemos serviços integrados nas áreas da educação,
+            saúde, assistência social, esporte, lazer e desenvolvimento
+            humano para transformar vidas e construir um futuro
+            com mais oportunidades.
+        </p>
+
+
+        <div class="botoes">
+
+            <a href="#servicos" class="botao">
+                Conheça nossos serviços
+            </a>
+
+            <a href="inscricao.html" class="botao botao-laranja">
+                Faça sua inscrição
+            </a>
+
+            <a href="voluntario.html" class="botao botao-verde">
+                Seja Voluntário
+            </a>
+
+            <a href="parceiro.html" class="botao botao-roxo">
+                Seja Parceiro
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     QUEM SOMOS
+========================= -->
+
+<section class="quem-somos" id="instituto">
+
+    <div class="secao">
+
+        <div class="titulo">
+
+            <h2>
+                Quem Somos 💙
+            </h2>
+
+            <p>
+                Conheça o Instituto TEA Aquarela Brasil - ITAB.
+            </p>
+
+        </div>
+
+
+        <p class="quem-texto">
+
+            O Instituto TEA Aquarela Brasil - ITAB tem como
+            propósito promover cuidado, acolhimento, inclusão,
+            desenvolvimento humano e garantia de direitos,
+            contribuindo para uma sociedade mais acessível,
+            acolhedora e humanizada.
+
+        </p>
+
+
+        <div class="missao">
+
+
+            <div class="missao-card">
+
+                <div class="icone">
+                    🎯
+                </div>
+
+                <h3>
+                    Nossa Missão
+                </h3>
+
+                <p>
+                    Promover acolhimento, inclusão, desenvolvimento
+                    e qualidade de vida para pessoas e famílias.
+                </p>
+
+            </div>
+
+
+            <div class="missao-card">
+
+                <div class="icone">
+                    🌎
+                </div>
+
+                <h3>
+                    Nossa Visão
+                </h3>
+
+                <p>
+                    Ser referência em cuidado, inclusão,
+                    desenvolvimento e atendimento humanizado.
+                </p>
+
+            </div>
+
+
+            <div class="missao-card">
+
+                <div class="icone">
+                    ❤️
+                </div>
+
+                <h3>
+                    Nossos Valores
+                </h3>
+
+                <p>
+                    Respeito, inclusão, acolhimento, dignidade,
+                    diversidade, solidariedade e compromisso social.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SERVIÇOS
+========================= -->
+
+<section class="servicos" id="servicos">
+
+    <div class="secao">
+
+        <div class="titulo">
+
+            <h2>
+                Nossos Serviços 🧩
+            </h2>
+
+            <p>
+                Cuidado e desenvolvimento em diferentes áreas
+                para atender às necessidades de cada pessoa.
+            </p>
+
+        </div>
+
+
+        <div class="servicos-grid">
+
+
+            <div class="servico">
+                <div class="icone">👶</div>
+                <h3>Educação Infantil</h3>
+                <p>Creche e pré-escola.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">📚</div>
+                <h3>Ensino e Apoio Pedagógico</h3>
+                <p>Apoio educacional e atividades de aprendizagem.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">🎓</div>
+                <h3>Capacitação e Treinamentos</h3>
+                <p>Cursos, formações e treinamentos.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">🩺</div>
+                <h3>Atendimento Médico</h3>
+                <p>Consultas médicas especializadas.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">🧠</div>
+                <h3>Psicologia</h3>
+                <p>Avaliação, acompanhamento e intervenções.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">🍎</div>
+                <h3>Nutrição</h3>
+                <p>Avaliação e acompanhamento nutricional.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">🏃</div>
+                <h3>Fisioterapia</h3>
+                <p>Desenvolvimento motor e qualidade de vida.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">✋</div>
+                <h3>Terapia Ocupacional</h3>
+                <p>Autonomia e independência nas atividades.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">🗣️</div>
+                <h3>Fonoaudiologia</h3>
+                <p>Comunicação, linguagem, fala e audição.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">❤️</div>
+                <h3>Atenção à Saúde</h3>
+                <p>Acolhimento e atendimento multidisciplinar.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">💚</div>
+                <h3>Outras Atividades de Saúde</h3>
+                <p>Práticas complementares de cuidado e bem-estar.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">🧑‍🤝‍🧑</div>
+                <h3>Atenção Psicossocial</h3>
+                <p>Acompanhamento e apoio psicossocial.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">👥</div>
+                <h3>Assistência Social</h3>
+                <p>Orientação, encaminhamentos e acesso a direitos.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">🤝</div>
+                <h3>Assistência Social sem Alojamento</h3>
+                <p>Ações de inclusão, proteção e apoio.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">⚽</div>
+                <h3>Esporte e Atividades Esportivas</h3>
+                <p>Atividades físicas e hábitos saudáveis.</p>
+            </div>
+
+
+            <div class="servico">
+                <div class="icone">🎨</div>
+                <h3>Recreação e Lazer</h3>
+                <p>Atividades recreativas, culturais e de integração.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     NOSSAS AÇÕES
+========================= -->
+
+<section class="acoes" id="acoes">
+
+    <div class="secao">
+
+        <div class="titulo">
+
+            <h2>
+                Nossas Ações 📸
+            </h2>
+
+            <p>
+                Conheça algumas das ações, projetos e atividades
+                realizadas pelo Instituto TEA Aquarela Brasil - ITAB.
+            </p>
+
+        </div>
+
+
+        <div class="acoes-grid">
+
+
+            <div class="acao">
+
+                <div class="acao-foto">
+                    📸
+                </div>
+
+                <div class="acao-conteudo">
+
+                    <h3>
+                        Campanhas
+                    </h3>
+
+                    <p>
+                        Ações de conscientização,
+                        informação e inclusão.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="acao">
+
+                <div class="acao-foto">
+                    🎓
+                </div>
+
+                <div class="acao-conteudo">
+
+                    <h3>
+                        Capacitações
+                    </h3>
+
+                    <p>
+                        Formação e capacitação para
+                        profissionais e comunidade.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="acao">
+
+                <div class="acao-foto">
+                    🤝
+                </div>
+
+                <div class="acao-conteudo">
+
+                    <h3>
+                        Ações Sociais
+                    </h3>
+
+                    <p>
+                        Atividades de acolhimento
+                        e apoio às famílias.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="acao">
+
+                <div class="acao-foto">
+                    🌈
+                </div>
+
+                <div class="acao-conteudo">
+
+                    <h3>
+                        Inclusão
+                    </h3>
+
+                    <p>
+                        Projetos de acessibilidade,
+                        respeito e participação.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     APOIE
+========================= -->
+
+<section class="apoie" id="apoie">
+
+    <div class="secao">
+
+        <div class="titulo">
+
+            <h2>
+                Apoie o Instituto 💙
+            </h2>
+
+            <p>
+                Sua ajuda contribui para que o Instituto continue
+                realizando ações de cuidado, inclusão e desenvolvimento.
+            </p>
+
+        </div>
+
+
+        <div class="apoie-grid">
+
+
+            <div class="apoie-card">
+
+                <div class="icone">
+                    💰
+                </div>
+
+                <h3>
+                    Faça uma Doação
+                </h3>
+
+                <p>
+                    Sua contribuição ajuda na realização
+                    de projetos e ações sociais.
+                </p>
+
+                <a href="#contato" class="botao">
+                    Quero Ajudar
+                </a>
+
+            </div>
+
+
+            <div class="apoie-card">
+
+                <div class="icone">
+                    🎁
+                </div>
+
+                <h3>
+                    Doe Materiais
+                </h3>
+
+                <p>
+                    Livros, brinquedos e materiais educativos
+                    também podem ajudar nossas ações.
+                </p>
+
+                <a href="#contato" class="botao">
+                    Quero Doar
+                </a>
+
+            </div>
+
+
+            <div class="apoie-card">
+
+                <div class="icone">
+                    🏢
+                </div>
+
+                <h3>
+                    Seja Patrocinador
+                </h3>
+                
