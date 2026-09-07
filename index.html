@@ -1,257 +1,298 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instituto TEA Aquarela Brasil - ITEA</title>
 
-    <title>INSTITUTO TEA AQUARELA BRASIL - ITEA</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;line-height:1.6;color:#333;background:#fff}
+header{background:#fff;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px #ccc;position:sticky;top:0;z-index:10}
+header img{width:80px}
+nav a{margin:0 8px;text-decoration:none;color:#333;font-weight:bold}
+nav a:hover{color:#1976d2}
+.hero{text-align:center;padding:60px 20px;background:#eaf6ff}
+.hero img{width:150px;max-width:80%}
+.hero h1{color:#1769aa;margin:20px 0 10px;font-size:36px}
+.hero p{font-size:19px;margin-bottom:25px}
+.btn{display:inline-block;padding:12px 22px;background:#1976d2;color:white;text-decoration:none;border-radius:8px;margin:5px}
+section{padding:55px 7%}
+section h2{text-align:center;color:#1769aa;margin-bottom:30px;font-size:30px}
+.about{text-align:center;max-width:900px;margin:auto;font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{padding:25px;background:#f5faff;border-radius:12px;text-align:center;box-shadow:0 2px 8px #ddd}
+.card h3{color:#1769aa;margin-bottom:10px}
+.icon{font-size:38px;margin-bottom:10px}
+.actions{background:#f7f7f7}
+.action-box{text-align:center;max-width:900px;margin:auto}
+.contact{text-align:center}
+footer{background:#1769aa;color:white;text-align:center;padding:25px}
+@media(max-width:800px){
+header{flex-direction:column}
+nav{margin-top:12px;text-align:center}
+nav a{display:inline-block;margin:5px}
+.cards{grid-template-columns:1fr}
+.hero h1{font-size:28px}
+}
+</style>
+</head>
 
-    <meta name="description"
-        content="Instituto TEA Aquarela Brasil - ITEA. Inclusão, acolhimento, educação, saúde e assistência social.">
+<body>
 
-    <style>
+<header>
+<img src="imagens/logo.png" alt="Logo Instituto TEA Aquarela Brasil">
+<nav>
+<a href="#inicio">Início</a>
+<a href="#quem-somos">Quem Somos</a>
+<a href="#servicos">Serviços</a>
+<a href="#acoes">Nossas Ações</a>
+<a href="#apoie">Apoie</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+<section class="hero" id="inicio">
+<img src="imagens/logo.png" alt="Instituto TEA Aquarela Brasil">
+<h1>INSTITUTO TEA AQUARELA BRASIL - ITEA</h1>
+<p>Acolhimento, inclusão, desenvolvimento e defesa dos direitos.</p>
+<a class="btn" href="#servicos">Conheça nossos serviços</a>
+<a class="btn" href="#apoie">Apoie nosso trabalho</a>
+</section>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #ffffff;
-        }
+<section id="quem-somos">
+<h2>Quem Somos</h2>
+<div class="about">
+<p>O Instituto TEA Aquarela Brasil - ITEA é uma instituição comprometida com a promoção da inclusão, do acolhimento e da garantia de direitos das pessoas com Transtorno do Espectro Autista e suas famílias.</p>
+<br>
+<p>Nosso trabalho busca fortalecer famílias, promover informação, oferecer apoio e contribuir para uma sociedade mais inclusiva e acessível.
+</p>
 
-        /* CABEÇALHO */
+</div>
 
-        header {
-            background: #ffffff;
-            padding: 15px 5%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-        }
+</section>
 
-        .logo-area {
-            display: flex;
-            align-items: center;
-        }
 
-        .logo-area img {
-            width: 75px;
-            height: 75px;
-            object-fit: contain;
-        }
+<section id="servicos">
 
-        .logo-text {
-            margin-left: 12px;
-        }
+<h2>Nossos Serviços</h2>
 
-        .logo-text h1 {
-            font-size: 18px;
-            color: #2673a6;
-            line-height: 1.2;
-        }
+<div class="cards">
 
-        .logo-text p {
-            font-size: 12px;
-            color: #777;
-        }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 18px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+<div class="card">
+<div class="icon">🧩</div>
+<h3>Atendimento Social</h3>
+<p>Acolhimento, orientação e acompanhamento social.</p>
+</div>
 
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            font-size: 14px;
-            transition: 0.3s;
-        }
 
-        nav a:hover {
-            color: #2673a6;
-        }
+<div class="card">
+<div class="icon">🧠</div>
+<h3>Psicologia</h3>
+<p>Atendimento e acompanhamento psicológico.</p>
+</div>
 
-        /* BANNER */
 
-        .hero {
-            min-height: 520px;
-            background: linear-gradient(
-                135deg,
-                #e8f7ff,
-                #fff4fa,
-                #f0fff5
-            );
+<div class="card">
+<div class="icon">👩‍⚕️</div>
+<h3>Enfermagem</h3>
+<p>Orientações e cuidados de enfermagem.</p>
+</div>
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
 
-            padding: 60px 20px;
-        }
+<div class="card">
+<div class="icon">🗣️</div>
+<h3>Fonoaudiologia</h3>
+<p>Apoio ao desenvolvimento da comunicação e linguagem.</p>
+</div>
 
-        .hero-logo {
-            width: 180px;
-            height: 180px;
-            object-fit: contain;
-            margin-bottom: 20px;
-        }
 
-        .hero h2 {
-            font-size: 38px;
-            color: #2673a6;
-            margin-bottom: 15px;
-            max-width: 900px;
-        }
+<div class="card">
+<div class="icon">✋</div>
+<h3>Terapia Ocupacional</h3>
+<p>Atividades para autonomia e desenvolvimento.</p>
+</div>
 
-        .hero p {
-            font-size: 19px;
-            max-width: 750px;
-            color: #555;
-            margin-bottom: 25px;
-        }
 
-        /* BOTÕES */
+<div class="card">
+<div class="icon">📚</div>
+<h3>Pedagogia</h3>
+<p>Apoio ao processo de aprendizagem.</p>
+</div>
 
-        .btn {
-            display: inline-block;
-            background: #2673a6;
-            color: white;
-            padding: 13px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-            margin: 5px;
-        }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
-        }
+<div class="card">
+<div class="icon">🎓</div>
+<h3>Psicopedagogia</h3>
+<p>Acompanhamento das dificuldades de aprendizagem.</p>
+</div>
 
-        .btn-pink {
-            background: #d96b9b;
-        }
 
-        /* SEÇÕES */
+<div class="card">
+<div class="icon">🧠</div>
+<h3>Neuropsicopedagogia</h3>
+<p>Atuação voltada aos processos de aprendizagem e desenvolvimento.</p>
+</div>
 
-        section {
-            padding: 70px 8%;
-        }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+<div class="card">
+<div class="icon">🏃</div>
+<h3>Educação Física</h3>
+<p>Atividades físicas adaptadas e inclusivas.</p>
+</div>
 
-        .section-title h2 {
-            color: #2673a6;
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
 
-        .section-title p {
-            color: #666;
-            max-width: 750px;
-            margin: auto;
-        }
+<div class="card">
+<div class="icon">🍎</div>
+<h3>Nutrição</h3>
+<p>Orientações nutricionais individualizadas.</p>
+</div>
 
-        /* QUEM SOMOS */
 
-        .about {
-            background: #ffffff;
-        }
+<div class="card">
+<div class="icon">⚖️</div>
+<h3>Orientação Jurídica</h3>
+<p>Informações sobre direitos e acesso às políticas públicas.</p>
+</div>
 
-        .about-content {
-            max-width: 950px;
-            margin: auto;
-            text-align: center;
-            font-size: 17px;
-        }
 
-        .about-content p {
-            margin-bottom: 15px;
-        }
+<div class="card">
+<div class="icon">📄</div>
+<h3>Orientação sobre Benefícios</h3>
+<p>Informações e orientações sobre benefícios sociais.</p>
+</div>
 
-        /* SERVIÇOS */
 
-        .services {
-            background: #f7fbfd;
-        }
+<div class="card">
+<div class="icon">🏫</div>
+<h3>Apoio Escolar</h3>
+<p>Orientações para inclusão e acompanhamento educacional.</p>
+</div>
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
 
-        .card {
-            background: white;
-            padding: 25px 18px;
-            border-radius: 15px;
-            text-align: center;
+<div class="card">
+<div class="icon">👨‍👩‍👧</div>
+<h3>Apoio às Famílias</h3>
+<p>Acolhimento e orientação para familiares.</p>
+</div>
 
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
 
-            transition: 0.3s;
+<div class="card">
+<div class="icon">❤️</div>
+<h3>Grupos de Apoio</h3>
+<p>Espaços de acolhimento, troca de experiências e informação.</p>
+</div>
 
-            border-top: 4px solid #2673a6;
-        }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
+<div class="card">
+<div class="icon">📢</div>
+<h3>Palestras e Capacitações</h3>
+<p>Ações educativas sobre TEA, inclusão e direitos.</p>
+</div>
 
-        .card-icon {
-            font-size: 38px;
-            margin-bottom: 12px;
-        }
 
-        .card h3 {
-            font-size: 17px;
-            color: #2673a6;
-            margin-bottom: 8px;
-        }
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Projetos Sociais</h3>
+<p>Projetos voltados à inclusão e participação social.</p>
+</div>
 
-        .card p {
-            font-size: 14px;
-            color: #666;
-        }
 
-        /* NOSSAS AÇÕES */
+<div class="card">
+<div class="icon">🌈</div>
+<h3>Ações de Inclusão</h3>
+<p>Campanhas e atividades de conscientização e inclusão.</p>
+</div>
 
-        .actions {
-            background: #ffffff;
-        }
 
-        .action-card {
-            background: #f9f9f9;
-            border-radius: 15px;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
-        }
+</div>
 
-        .action-card .icon {
-            font-size: 45px;
-            margin-bottom: 15px;
-        }
-       
+</section>
+
+
+<section id="acoes" class="actions">
+
+<h2>Nossas Ações</h2>
+
+<div class="action-box">
+
+<p>
+O Instituto desenvolve ações educativas, sociais e comunitárias para promover conhecimento, inclusão e respeito às pessoas com TEA e suas famílias.
+</p>
+
+<br>
+
+<p>
+Realizamos palestras, campanhas, capacitações, atividades de conscientização e projetos sociais.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="apoie">
+
+<h2>Apoie o Instituto</h2>
+
+<div class="action-box">
+
+<p>
+Você pode fazer parte dessa missão!
+</p>
+
+<br>
+
+<a class="btn" href="inscricao.html">
+Inscreva-se no Instituto
+</a>
+
+<a class="btn" href="voluntario.html">
+Seja Voluntário
+</a>
+
+<a class="btn" href="parceiro.html">
+Seja Parceiro
+</a>
+
+</div>
+
+</section>
+
+
+<section id="contato" class="contact">
+
+<h2>Entre em Contato</h2>
+
+<p>
+<strong>Instituto TEA Aquarela Brasil - ITEA</strong>
+</p>
+
+<p>
+E-mail: institutoteaaquarelabrasil@gmail.com
+</p>
+
+<br>
+
+<a class="btn" href="mailto:institutoteaaquarelabrasil@gmail.com">
+Enviar E-mail
+</a>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Instituto TEA Aquarela Brasil - ITEA
+</p>
+
+<p>
+Todos os direitos reservados.
+</p>
+
+</footer>
+
+</body>
+</html>
